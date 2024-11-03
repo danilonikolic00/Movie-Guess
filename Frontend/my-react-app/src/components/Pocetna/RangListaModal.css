@@ -1,0 +1,58 @@
+.user-list-container {
+    max-height: 50vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.user-list-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.user-list-container::-webkit-scrollbar-thumb {
+    background-color: #ddd; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+}
+
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 250px;
+    margin-top:5px;
+}
+
+.user-item {
+    background-color: #f4f0f0;
+    width:190px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(100% - 20px); /* Each item takes full width minus the gap */
+    margin-bottom: 10px; /* Spacing between rows */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.user-item p {
+    margin:0 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Border for rows */
+}
+
+.user-item p:last-child {
+    margin:0 0;
+    border-bottom: none; /* Remove border for last row */
+    margin:0px
+}
+
+.user-item p:first-child {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
