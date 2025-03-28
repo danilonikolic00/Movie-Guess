@@ -3,13 +3,11 @@ A web application for guessing movies built with .NET and React.js.
 Test your movie knowledge! Guess the hidden movie using clues and color-coded feedback.
 
 ## About
-
 - [Features](#features)
 - [How to Play](#how-to-play)
 - [Screenshots](#screenshots)
 
 ---
-
  ## Features
 
 - Guess the Movie: Input a movie title and see how close you are!
@@ -23,7 +21,6 @@ Test your movie knowledge! Guess the hidden movie using clues and color-coded fe
 - Detailed Feedback: Each guess reveals info about the movie's name, country, director, actor, year, and genre.
 
 ---
-
 ## How to Play 
 
 - Enter a movie title in the input field and submit your guess.
@@ -33,20 +30,23 @@ Test your movie knowledge! Guess the hidden movie using clues and color-coded fe
 - Game Over after 10 incorrect guesses—the answer will be revealed.
 
 ---
-
 ## Screenshots
-Game UI  
+- Game UI  
+
 <div align="center">
     <img src="/Assets/UI.png">
 </div>
 
-Guess Feedback  
+- Guess Feedback 
+
 <img src="/Assets/Guess.png">
 
-Correct Guess  
+- Correct Guess  
+
 <img src="/Assets/CorrectGuess.png">
 
-Game Modals  
+- Game Modals  
+
 <div align="center">
     <img src="Assets/GameOverModal.png">
     <img src="/Assets/GameWonModal.png">
