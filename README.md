@@ -35,15 +35,15 @@ Test your movie knowledge! Guess the hidden movie using clues and color-coded fe
 ---
 
 ## Screenshots
-Game UI
+Game UI  
 <img src="/Assets/UI.png">
 
-Guess Feedback
+Guess Feedback  
 <img src="/Assets/Guess.png">
 
-Correct Guess 🏆
+Correct Guess  
 <img src="/Assets/CorrectGuess.png">
 <img src="/Assets/GameWonModal.png">
 
-Game Over 😢
+Game Over  
 <img src="Assets/GameOverModal.png">
