@@ -45,5 +45,7 @@ Correct Guess
 <img src="/Assets/CorrectGuess.png">
 
 Game Modals  
-<img src="/Assets/GameWonModal.png">
-<img src="Assets/GameOverModal.png">
+<div align="center">
+    <img src="/Assets/GameWonModal.png">
+    <img src="Assets/GameOverModal.png">
+</div>
