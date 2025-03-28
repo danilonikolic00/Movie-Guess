@@ -43,7 +43,7 @@ Guess Feedback
 
 Correct Guess  
 <img src="/Assets/CorrectGuess.png">
-<img src="/Assets/GameWonModal.png">
 
-Game Over  
+Game Modals  
+<img src="/Assets/GameWonModal.png">
 <img src="Assets/GameOverModal.png">
