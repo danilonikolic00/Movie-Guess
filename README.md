@@ -31,21 +31,21 @@ Test your movie knowledge! Guess the hidden movie using clues and color-coded fe
 
 ---
 ## Screenshots
-- Game UI  
+Game UI  
 
 <div align="center">
     <img src="/Assets/UI.png">
 </div>
 
-- Guess Feedback 
+Guess Feedback 
 
 <img src="/Assets/Guess.png">
 
-- Correct Guess  
+Correct Guess  
 
 <img src="/Assets/CorrectGuess.png">
 
-- Game Modals  
+Game Modals  
 
 <div align="center">
     <img src="Assets/GameOverModal.png">
