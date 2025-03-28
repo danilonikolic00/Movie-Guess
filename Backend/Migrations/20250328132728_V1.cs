@@ -29,25 +29,6 @@ namespace Backend.Migrations
                 {
                     table.PrimaryKey("PK_Filmovi", x => x.ID);
                 });
-
-            migrationBuilder.CreateTable(
-                name: "Korisnici",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Tip = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    KorisnickoIme = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Lozinka = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BrojOdigranih = table.Column<int>(type: "int", nullable: false),
-                    BrojPogodjenih = table.Column<int>(type: "int", nullable: false),
-                    Uspesnost = table.Column<double>(type: "float", nullable: false),
-                    UkupanSkor = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Korisnici", x => x.ID);
-                });
         }
 
         /// <inheritdoc />
@@ -55,9 +36,6 @@ namespace Backend.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Filmovi");
-
-            migrationBuilder.DropTable(
-                name: "Korisnici");
         }
     }
 }

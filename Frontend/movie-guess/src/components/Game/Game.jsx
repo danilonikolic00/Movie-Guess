@@ -6,7 +6,7 @@ import GameModal from "../UI/GameModal"
 import { useEffect, useState } from "react";
 
 const compareMovies = async (movie, generatedMovie) => {
-    const response = await axios.get(`http://localhost:5189/Film/UporediFilmove/${movie}/${generatedMovie}`)
+    const response = await axios.get(`http://localhost:5045/Film/UporediFilmove/${movie}/${generatedMovie}`)
     return response.data
 }
 
@@ -26,7 +26,7 @@ const Game = () => {
     }, [guesses])
 
     const getMovie = async () => {
-        const response = await axios.get('http://localhost:5189/Film/VratiFilm/');
+        const response = await axios.get('http://localhost:5045/Film/VratiFilm/');
         setGeneratedMovie(response.data)
     }
 

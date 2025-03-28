@@ -5,11 +5,11 @@ import logo from "../../assets/image.png"
 import GameModal from '../UI/GameModal';
 
 const checkMovie = async (movie) => {
-    const provera = await axios.get(`http://localhost:5189/Film/PostojiFilm/${movie}`)
+    const provera = await axios.get(`http://localhost:5045/Film/PostojiFilm/${movie}`)
     if (provera.data === false) {
         return null
     }
-    const response = await axios.get(`http://localhost:5189/Film/VratiPostojeciFilm/${movie}`);
+    const response = await axios.get(`http://localhost:5045/Film/VratiPostojeciFilm/${movie}`);
     return response.data
 }
 
@@ -41,7 +41,7 @@ const GuessInput = (props) => {
 
     const getMovies = async () => {
         try {
-            const response = await axios.get(`http://localhost:5189/Film/VratiFilmove/${enteredMovie}`);
+            const response = await axios.get(`http://localhost:5045/Film/VratiFilmove/${enteredMovie}`);
             setMoviesDropdown(response.data);
         } catch (error) {
             console.error('Error fetching data: ', error);

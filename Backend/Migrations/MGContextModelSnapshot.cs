@@ -16,7 +16,7 @@ namespace Backend.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
+                .HasAnnotation("ProductVersion", "7.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -70,51 +70,6 @@ namespace Backend.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Filmovi");
-                });
-
-            modelBuilder.Entity("Models.Korisnik", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("ID");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("BrojOdigranih")
-                        .HasColumnType("int")
-                        .HasColumnName("BrojOdigranih");
-
-                    b.Property<int>("BrojPogodjenih")
-                        .HasColumnType("int")
-                        .HasColumnName("BrojPogodjenih");
-
-                    b.Property<string>("KorisnickoIme")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("KorisnickoIme");
-
-                    b.Property<string>("Lozinka")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Lozinka");
-
-                    b.Property<string>("Tip")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Tip");
-
-                    b.Property<int>("UkupanSkor")
-                        .HasColumnType("int")
-                        .HasColumnName("UkupanSkor");
-
-                    b.Property<double>("Uspesnost")
-                        .HasColumnType("float")
-                        .HasColumnName("Uspesnost");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Korisnici");
                 });
 #pragma warning restore 612, 618
         }
