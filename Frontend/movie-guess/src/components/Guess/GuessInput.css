@@ -1,0 +1,227 @@
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.input-form .logo h1 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  font-size: 2rem;
+}
+
+.input-form .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-button {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: .5rem 0;
+}
+
+.additional {
+  display: flex;
+  text-align: center;
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.additional p {
+  margin: 0 .5rem;
+  font-weight: 400;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 0 .5rem;
+}
+
+.dropdown {
+  position: absolute;
+  border: 1px solid black;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(5px);
+  padding: .5rem;
+  width: 300px;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #4D4AE8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  scrollbar-width: 12px;
+}
+
+.dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown li {
+  list-style-type: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+
+.button-20 {
+  appearance: button;
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: .5rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .3rem 3rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-20:focus:not(:focus-visible),
+.button-20:focus {
+  outline: 0;
+}
+
+.button-20:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+.button-20:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.button-20:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+.instruction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.instruction div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.correct {
+  background-color: #211C84;
+}
+
+.wrong {
+  background-color: #B5A8D5;
+}
+
+.older {
+  background-color: #4D55CC;
+}
+
+.newer {
+  background-color: #7A73D1;
+}
+
+@media only screen and (max-width: 1100px) {
+  .input-form {
+    width: 300px;
+  }
+
+  .input-form .logo h1 {
+    font-size: 1.7rem;
+  }
+
+  .input {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input-button {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .input-form .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .button-20 {
+    margin: 10px 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
