@@ -36,7 +36,9 @@ Test your movie knowledge! Guess the hidden movie using clues and color-coded fe
 
 ## Screenshots
 Game UI  
-<img src="/Assets/UI.png">
+<div align="center">
+    <img src="/Assets/UI.png">
+</div>
 
 Guess Feedback  
 <img src="/Assets/Guess.png">
@@ -46,6 +48,6 @@ Correct Guess
 
 Game Modals  
 <div align="center">
-    <img src="/Assets/GameWonModal.png">
     <img src="Assets/GameOverModal.png">
+    <img src="/Assets/GameWonModal.png">
 </div>
